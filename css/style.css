@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Primary */
+    --colorBrightOrange: hsl(31, 77%, 52%);
+    --colorDarkCyan: hsl(184, 100%, 22%);
+    --colorVeryDarkCyan: hsl(179, 100%, 13%);
+    /*Neutral */
+    --colorParagraph: hsla(0, 0%, 100%, 0.75);
+    --colorVeryLightGray: hsl(0, 0%, 95%);
+    /*background, headings, buttons*/
+}
+
+body {
+    padding-top: 50px;
+    background-color: var(--colorVeryLightGray);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.sedans {
+    background-color: var(--colorBrightOrange);
+    list-style-type: none;
+    border-radius: 15px 0 0 15px;
+    padding: 35px 35px;
+}
+
+.sedans .btn {
+    color: var(--colorBrightOrange);
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--colorVeryLightGray);
+    padding: 10px 25px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.sedans .btn:hover {
+    background-color: transparent;
+    color: var(--colorVeryLightGray);
+    border: 1px solid var(--colorVeryLightGray);
+}
+
+.suvs {
+    background-color: var(--colorDarkCyan);
+    list-style-type: none;
+    padding: 35px 35px;
+}
+
+.suvs .btn {
+    color: var(--colorDarkCyan);
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--colorVeryLightGray);
+    padding: 10px 25px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.suvs .btn:hover {
+    background-color: transparent;
+    color: var(--colorVeryLightGray);
+    border: 1px solid var(--colorVeryLightGray);
+}
+
+.luxury {
+    background-color: var(--colorVeryDarkCyan);
+    list-style-type: none;
+    border-radius: 0 15px 15px 0;
+    padding: 35px 35px;
+}
+
+.luxury .btn {
+    color: var(--colorVeryDarkCyan);
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--colorVeryLightGray);
+    padding: 10px 25px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.luxury .btn:hover {
+    background-color: transparent;
+    color: var(--colorVeryLightGray);
+    border: 1px solid var(--colorVeryLightGray);
+}
+
+li {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 35px;
+    color: var(--colorVeryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.product-description {
+    font-size: 15px;
+    color: var(--colorParagraph);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+        line-height: 2.0;
+        letter-spacing: 0.2px;
+    }
+    li {
+        padding: 10px;
+    }
+    .sedans {
+        padding: 30px 30px;
+        border-radius: 10px 10px 0 0;
+    }
+    .suvs {
+        padding: 30px 30px;
+    }
+    .luxury {
+        padding: 30px 30px;
+        border-radius: 0 0 10px 10px;
+    }
+    .product-title {
+        font-size: 25px;
+        margin: 5px 0;
+    }
+    .product-description {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .sedans .btn {
+        border-radius: 20px;
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+    .suvs .btn {
+        border-radius: 20px;
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+    .luxury .btn {
+        border-radius: 20px;
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+    footer {
+        position: static;
+    }
+}
