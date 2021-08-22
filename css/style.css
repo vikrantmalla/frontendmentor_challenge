@@ -16,7 +16,7 @@
 }
 
 body {
-    padding-top: 50px;
+    margin-top: 50px;
     background-color: var(--colorVeryLightGray);
 }
 
@@ -49,7 +49,7 @@ body {
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .sedans .btn:hover {
@@ -74,7 +74,7 @@ body {
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .suvs .btn:hover {
@@ -100,7 +100,7 @@ body {
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .luxury .btn:hover {
@@ -117,7 +117,6 @@ li {
     font-size: 35px;
     color: var(--colorVeryLightGray);
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 30px;
     margin: 10px 0;
     text-transform: uppercase;
 }
@@ -145,6 +144,68 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin-top: 200px;
+        padding-top: 0px;
+    }
+    .card {
+        width: 25%;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+    .sedans {
+        padding: 20px 20px;
+    }
+    .sedans .btn {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .sedans .btn:hover {
+        background-color: transparent;
+        color: var(--colorVeryLightGray);
+        border: 1px solid var(--colorVeryLightGray);
+    }
+    .suvs {
+        padding: 20px 20px;
+    }
+    .suvs .btn {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .suvs .btn:hover {
+        background-color: transparent;
+        color: var(--colorVeryLightGray);
+        border: 1px solid var(--colorVeryLightGray);
+    }
+    .luxury {
+        padding: 20px 20px;
+    }
+    .luxury .btn {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .luxury .btn:hover {
+        background-color: transparent;
+        color: var(--colorVeryLightGray);
+        border: 1px solid var(--colorVeryLightGray);
+    }
+    li {
+        padding: 15px;
+    }
+    .product-title {
+        margin: 10px 0;
+        font-size: 25px;
+    }
+    .product-description {
+        font-size: 10px;
+        margin: 15px 0;
+    }
 }
 
 @media only screen and (max-width: 375px) {
